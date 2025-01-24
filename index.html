@@ -11,17 +11,25 @@
     <link rel="icon" type="image/jpeg" sizes="192x192" href="assets/img/icon192x192.jpg">
     <link rel="icon" type="image/jpeg" sizes="512x512" href="assets/img/icon512x512.jpg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <div style="overflow: hidden;background-image: url(&quot;assets/img/bg.png&quot;);height: 100vh;display: grid;align-items: center;justify-content: center;"><img src="assets/img/x.svg" style="width: 60px;height: 60px;margin-top: -2px;margin-left: auto;margin-right: auto;">
+    <div style="overflow: hidden;background-image: url(&quot;assets/img/bg.png&quot;);height: 100vh;display: grid;align-items: center;justify-content: center;"><img id="twiterBtn" src="assets/img/x.svg" style="width: 60px;height: 60px;margin-top: -2px;margin-left: auto;margin-right: auto;cursor: pointer;">
         <div style="background-color: rgba(255,255,255,0.49);width: 800px;height: 300px;margin-left: auto;margin-right: auto;display: grid;align-items: center;justify-content: center;border-radius: 20px;margin-top: -70px;">
             <div style="display: flex;align-items: center;justify-content: center;"><img src="assets/img/icon.jpg" style="border-radius: 50%;border-color: #000000;border-width: 20px;box-shadow: 0 0 0 5px #000;">
-                <h1 style="text-align: right;font-size: 99px;">$JeeCoin</h1>
+                <h1 style="text-align: right;font-size: 99px;">&nbsp;$JeeCoin</h1>
             </div>
             <p style="font-size: 42px;">The most popular internet meme in China</p>
-            <p style="font-size: 42px;">ca:</p>
+            <div style="display: flex;">
+                <p style="font-size: 42px;">ca:</p>
+                <p id="token" style="margin-top: auto;margin-bottom: auto;font-size: 26px;padding-left: 11px;padding-bottom: 10px;"></p><button id="copyBtn" style="border:none;border-width:0;background-color: #00000000;width: 50px; height: 49px;margin-top:auto;margin-bottom:auto;"><svg id="copyImg" viewBox="0 0 16 16" width="16px" height="16px"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>
+<svg id="tickImg" aria-hidden="true" focusable="false" class="octicon octicon-check" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" style="display: none; user-select: none; vertical-align: text-bottom; overflow: visible;"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg></button>
+                <div id="copyTip" style="position: absolute;background-color: #343434;width: 135px;height: 30px;margin-top: -17px;margin-left: 684px;display: none;border-radius: 10px;">
+                    <p style="color: rgb(255,255,255);margin-top: 2px;margin-left: 4px;">Copy to clipboard<br></p>
+                </div>
+            </div>
         </div><button class="btn btn-primary" id="buyBtn" type="button" style="width: 200px;height: 80px;margin-right: auto;border-radius: 20px;background-color: #da2929;font-size: 37px;padding-top: 0px;margin-top: -96px;margin-left: auto;">Buy now</button>
         <div
             style="margin-left: auto;margin-right: auto;background-color: rgba(255,255,255,0.49);border-radius: 20px;width: 842px;text-align: center;margin-bottom: -39px;">
