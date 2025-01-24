@@ -1,7 +1,7 @@
  buyBtn.addEventListener('click', function() {
         // 使用window.location实现页面跳转
         // 请将'https://example.com'替换为您想要跳转到的页面的URL
-        window.location.href = 'https://pump.fun/coin/73XXGKh1pfYQd8dCnvNRZSuuYhCjoagc96cBVMenpump';
+        window.location.href = 'https://gmgn.ai/sol/token/73XXGKh1pfYQd8dCnvNRZSuuYhCjoagc96cBVMenpump';
 });
 
 twiterBtn.addEventListener('click', function() {
